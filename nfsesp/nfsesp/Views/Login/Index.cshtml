@@ -1,0 +1,42 @@
+﻿@model LoginViewModel;
+@{
+    Layout = "_ClearLayout";
+    ViewData["Title"] = "Login";
+}
+
+<div class="main-container">
+
+    <div class="main-title-container">
+        <h1 class="application-title">NFSe - SP</h1>
+
+        <p class="main-credits">
+            Esta aplicação foi desenvolvida por <a href="https://linkedin.com/in/gustavo-cazarini" target="_blank">@@Gustavo Cazarini</a> com o propósito de agilizar a emissão de notas fiscais de servidores do estado de São Paulo, sendo uma alternativa ao sistema Nota do Milhão.<br /><br />Sinta-se livre para adaptar ao seu negócio, usar como inspiração ou utilizá-la como está.
+        </p>
+    </div>
+
+    <div class="main-login-container">
+        <form method="post">
+            <h2>Bem Vindo(a)</h2>
+            <small>Entre com sua conta para continuar</small>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Email" type="email" class="form-control" id="floatingEmail" placeholder="emailcorporativo@email.com" />
+                <label for="floatingEmail"><i class="bi bi-envelope"></i> Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Senha" type="password" class="form-control" id="floatingSenha" placeholder="Sua senha de acesso..." />
+                <label for="floatingSenha"><i class="bi bi-key"></i> Senha</label>
+            </div>
+
+            <button type="button" class="btn-esqueci-senha mb-3">Esqueci minha senha</button>
+
+            <div class="container-message">
+                @* ESPAÇO RESERVADO PARA MENSAGENS DE ERRO *@
+                @ViewBag.Mensagem
+            </div>
+
+            <button type="submit" class="btn-entrar">Entrar</button>
+        </form>
+    </div>
+</div>

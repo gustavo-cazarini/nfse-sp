@@ -1,0 +1,39 @@
+﻿header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-item:active {
+    background-color: #3e5e7e;
+}
+
+.btn-dropdown-config {
+    border: none;
+    background: none;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn-dropdown-config:hover {
+    background: rgba(0,0,0,.2);
+}
+
+.btn-dropdown-config:focus {
+    box-shadow: none;
+    background: rgba(0,0,0,.2);
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.3em;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+﻿ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-link {
+    color: #fff !important;
+    padding: 2px 0px;
+}
+
+.nav-link:hover {
+    background-color: #021324;
+}
+
+.nav-link.selected {
+    background-color: #021324;
+}
+
+li a i {
+    display: block;
+}

@@ -22,6 +22,11 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}");
+
+app.MapControllerRoute(
+    name: "configs_default",
+    pattern: "Configs/",
+    defaults: new { controller = "Configs", action = "Empresa" });
 
 app.Run();
