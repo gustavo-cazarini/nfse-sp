@@ -6,6 +6,8 @@ namespace nfsesp.Controllers
     {
         public IActionResult Empresa()
         {
+            ViewData["Title"] = "Empresa";
+
             return View();
         }
     }
